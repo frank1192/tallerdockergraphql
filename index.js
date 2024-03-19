@@ -6,6 +6,7 @@ const path = require('path');
 const typeDefs = gql`
   type Query {
     hello(message: String!): String
+    aboutFrankAguirre: String
   }
 `;
 
@@ -15,6 +16,10 @@ const resolvers = {
     hello: (_, { message }) => {
         return `¡Hola, ${message}! Un saludo por parte del profe `;
       },
+      aboutFrankAguirre: () => {
+        return 'Hola, soy franklin aguirre, estudio ingenieria en sistemas,tengo 23, me gustan las motos, trabajo en la seccion de cultura recreacion y deporte de la universidad, mi trabajo consiste en hacer un aplicativo web, trabajo los fines de semana como auxiliar operativo los fines de semana en comfandi pance, soy trabajador en alturas y rescatista profesional en alturas';
+
+      }  
   },
 };
 
