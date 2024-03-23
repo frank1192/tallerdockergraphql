@@ -7,6 +7,7 @@ const typeDefs = gql`
   type Query {
     hello(message: String!): String
     aboutFrankAguirre: String
+    aboutJuleipssy: String
   }
 `;
 
@@ -19,7 +20,11 @@ const resolvers = {
       aboutFrankAguirre: () => {
         return 'Hola, soy franklin aguirre, estudio ingenieria en sistemas,tengo 23, me gustan las motos, trabajo en la seccion de cultura recreacion y deporte de la universidad, mi trabajo consiste en hacer un aplicativo web, trabajo los fines de semana como auxiliar operativo los fines de semana en comfandi pance, soy trabajador en alturas y rescatista profesional en alturas';
 
-      }  
+      },
+      aboutJuleipssy: () => {
+        return 'Hola, soy Juleipssy, estudio ingenieria en sistemas, me gusta mucho el fútbol, trabajo en ASES, me encanta la musica ';
+
+      }    
   },
 };
 
