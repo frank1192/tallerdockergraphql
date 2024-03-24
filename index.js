@@ -8,6 +8,7 @@ const typeDefs = gql`
     hello(message: String!): String
     aboutFrankAguirre: String
     aboutJuleipssy: String
+    aboutManuelCardoso: String
   }
 `;
 
@@ -24,7 +25,10 @@ const resolvers = {
       aboutJuleipssy: () => {
         return 'Hola, soy Juleipssy, estudio ingenieria en sistemas, me gusta mucho el fútbol, trabajo en ASES, me encanta la musica ';
 
-      }    
+      },
+      aboutManuelCardoso: () => {
+        return 'Hola soy Manuel Felipe estudiante de ingenieria de sistemas, tengo 20 años, me gusta mucho el deporte en especial el baloncensto el cual practique competitivamente por 3 años en el equipo del colegio, soy una persona muy activa y aunque actualmente no juegue baloncesto me gusta montar bicicleta e ir a entrenear en el ginmaio, mi genero de musica fav es el indie y actualmente no tengo trabajo pero estoy en busqueda de chamba';
+      },
   },
 };
 
