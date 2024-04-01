@@ -9,6 +9,7 @@ const typeDefs = gql`
     aboutFrankAguirre: String
     aboutJuleipssy: String
     aboutSebastian: String
+    aboutManuelCardoso: String
   }
 `;
 
@@ -29,7 +30,10 @@ const resolvers = {
       aboutSebastian: () => {
         return 'Hola, soy Sebastián Orrego, antes estudiaba ingeniería de materiales pero nunca me gustó. Me gustan mucho los videojuegos y hacer cualquier deporte, por otro lado, me gustaría llegar a ser igual de pro que el profesor para el desarrollo. ';
 
-      }
+      },
+      aboutManuelCardoso: () => {
+        return 'Hola soy Manuel Felipe estudiante de ingenieria de sistemas, tengo 20 años, me gusta mucho el deporte en especial el baloncensto el cual practique competitivamente por 3 años en el equipo del colegio, soy una persona muy activa y aunque actualmente no juegue baloncesto me gusta montar bicicleta e ir a entrenear en el ginmaio, mi genero de musica fav es el indie y actualmente no tengo trabajo pero estoy en busqueda de chamba';
+      },
   },
 };
 
