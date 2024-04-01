@@ -8,6 +8,7 @@ const typeDefs = gql`
     hello(message: String!): String
     aboutFrankAguirre: String
     aboutJuleipssy: String
+    aboutSebastian: String
     aboutManuelCardoso: String
   }
 `;
@@ -24,6 +25,10 @@ const resolvers = {
       },
       aboutJuleipssy: () => {
         return 'Hola, soy Juleipssy, estudio ingenieria en sistemas, me gusta mucho el fútbol, trabajo en ASES, me encanta la musica ';
+
+      },
+      aboutSebastian: () => {
+        return 'Hola, soy Sebastián Orrego, antes estudiaba ingeniería de materiales pero nunca me gustó. Me gustan mucho los videojuegos y hacer cualquier deporte, por otro lado, me gustaría llegar a ser igual de pro que el profesor para el desarrollo. ';
 
       },
       aboutManuelCardoso: () => {
