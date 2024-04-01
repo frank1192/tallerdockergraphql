@@ -8,6 +8,7 @@ const typeDefs = gql`
     hello(message: String!): String
     aboutFrankAguirre: String
     aboutJuleipssy: String
+    aboutBrayanJurado: String
   }
 `;
 
@@ -24,6 +25,9 @@ const resolvers = {
       aboutJuleipssy: () => {
         return 'Hola, soy Juleipssy, estudio ingenieria en sistemas, me gusta mucho el fútbol, trabajo en ASES, me encanta la musica ';
 
+      }, 
+      aboutBrayanJurado: () => {
+        return 'Hola, soy Brayan Jurado, estudio ingenieria en sistemas, recién culmine una tecnología en la misma área, formo parte de la escuela de bailes latinos de la universidad, disfruto mucho ver y jugar fútbol, dibujar en mi tiempo libre';
       }    
   },
 };
